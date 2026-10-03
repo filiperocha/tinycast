@@ -45,7 +45,8 @@ are pure.
   English already has, folds `’` to `'`, and gives katakana a hiragana twin, since an IME shows hiragana
   until conversion. Packs ship for German, Spanish, French, Japanese, Korean, Portuguese, Russian and
   both Chinese scripts. European Portuguese has its own pack (`pt-PT` reads `autocarro` where `pt` reads
-  `ônibus`); CLDR stores only its differences, so the generator reads it over `pt`.
+  `ônibus`); CLDR stores only its differences, so the generator reads it over `pt`, and gives each
+  1990-reform spelling its older twin (`direção` and `direcção`), which many in Portugal still type.
 - **Search text is folded once, at load.** `EmojiIndex` keeps a `FuzzyMatch.Candidate` for each name
   and keyword, so a keystroke folds only the query. Folding non-ASCII keywords per keystroke made one
   pack cost 5–7× the English-only search.

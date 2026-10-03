@@ -35,7 +35,7 @@
 🤔|cara a pensar,cara,pensativo,queixo,refletir
 🫡|cara a saudar,bater continência,ensolarado,saudação,sim,tropas
 🤐|cara com boca com fecho de correr,boca,cara,fecho de correr,segredo
-🤨|cara com sobrancelha levantada,cético,desconfiança,sobrancelha levantada,surpreso
+🤨|cara com sobrancelha levantada,cético,céptico,desconfiança,sobrancelha levantada,surpreso
 😐|cara neutra,cara,inexpressivo,neutra,neutro,sem comentários,sem emoção
 😑|cara sem expressão,cara,inexpressivo,pouco convencido,pouco impressionado,sem expressão
 😶|cara sem boca,boca,calado,cara,sem boca,sem expressão,silencioso
@@ -75,7 +75,7 @@
 🤓|cara de cromo,caixa de óculos,cara,cara de nerd,cromo,esperto,óculos,sabe-tudo,sabichão,totó
 🧐|cara com monóculo,conservador,formal,luxo,rico
 😕|cara confusa,cara,confuso,não sei,triste
-🫤|cara com boca diagonal,cético,confusão,desapontado,duvidoso,incerto,inseguro,rosto com boca diagonal,sei lá,seja o que for
+🫤|cara com boca diagonal,cético,céptico,confusão,desapontado,duvidoso,incerto,inseguro,rosto com boca diagonal,sei lá,seja o que for
 😟|cara preocupada,cara,preocupado,surpreendido,triste
 🙁|cara ligeiramente franzida,cara,sobrolho menos franzido,triste
 ☹️|cara franzida,cara,sobrolho franzido,triste
@@ -195,7 +195,7 @@
 🖕|dedo médio,dedo,dedo do meio,gesto ofensivo,mão
 👇|costas da mão com dedo indicador a apontar para baixo,apontar,corpo,costas da mão,dedo,indicador,mão,para baixo
 ☝️|dedo indicador a apontar para cima,apontar,dedo,indicador,mão,para cima
-🫵|indicador a apontar para o espetador,acusar,apontar,apontar o dedo,mão,tu,você
+🫵|indicador a apontar para o espetador,indicador a apontar para o espectador,acusar,apontar,apontar o dedo,mão,tu,você
 👍|combinado,compreendi,corpo,fantástico,fixe,gosto,mão,ok,para cima,polegar,polegar para cima
 👎|corpo,mão,não concordo,não gosto,para baixo,polegar,polegar para baixo
 ✊|punho erguido,cerrado,corpo,mão,punho,punho levantado,soco,solidariedade
@@ -306,15 +306,15 @@
 🧑‍🍳|cozinheiro,chefe de cozinha
 👨‍🍳|cozinheiro (homem),chefe,cozinheiro,homem
 👩‍🍳|chefe,cozinheira,mulher
-🧑‍🔧|mecânico,canalizador,eletricista,ofício
+🧑‍🔧|mecânico,canalizador,eletricista,electricista,ofício
 👨‍🔧|mecânico (homem),canalizador,electricista,eletricista,homem,mecânico
 👩‍🔧|canalizadora,electricista,eletricista,mecânica,mulher
 🧑‍🏭|trabalhador fabril,fábrica,funcionário de fábrica,montagem,trabalhador
 👨‍🏭|operário fabril,fábrica,homem,indústria,montagem,operário,trabalhador
 👩‍🏭|operária fabril,fábrica,indústria,montagem,mulher,operária,trabalhadora
-🧑‍💼|empregado de escritório,arquiteto,gerente,negócios,trabalhador de escritório
-👨‍💼|administrador,arquiteto,empresa,empresário,funcionário de escritório,gerente,homem,trabalhador de escritório
-👩‍💼|administradora,arquiteta,empresa,empresária,funcionária de escritório,gerente,mulher,trabalhadora de escritório
+🧑‍💼|empregado de escritório,arquiteto,arquitecto,gerente,negócios,trabalhador de escritório
+👨‍💼|administrador,arquiteto,arquitecto,empresa,empresário,funcionário de escritório,gerente,homem,trabalhador de escritório
+👩‍💼|administradora,arquiteta,arquitecta,empresa,empresária,funcionária de escritório,gerente,mulher,trabalhadora de escritório
 🧑‍🔬|cientista,biólogo,engenheiro,físico,químico
 👨‍🔬|cientista (homem),biólogo,engenheiro,farmacêutico,físico,homem,matemático,químico
 👩‍🔬|cientista (mulher),bióloga,engenheira,farmacêutica,física,matemática,mulher,química
@@ -323,7 +323,7 @@
 👩‍💻|informática,inventora,mulher,programadora,tecnóloga
 🧑‍🎤|vocalista,ator,cantor,estrela
 👨‍🎤|cantor,ator,estrela,estrela do rock,homem
-👩‍🎤|atriz,cantora,estrela,estrela do rock,mulher
+👩‍🎤|atriz,actriz,cantora,estrela,estrela do rock,mulher
 🧑‍🎨|artista,paleta
 👨‍🎨|artista (homem),artista,homem,paleta,pintor,pintura
 👩‍🎨|artista (mulher),artista,mulher,paleta,pintora,pintura
@@ -340,15 +340,15 @@
 👮‍♂️|polícia (homem),agente,bófia,chui,homem
 👮‍♀️|polícia (mulher),agente,agente da polícia,apreender,autoridade,bófia,chui,lei,mulher,multa,polícia,prender,senhora agente
 🕵️|detetive,espião,homem,investigador
-🕵️‍♂️|detetive (homem),espião,homem,investigador
-🕵️‍♀️|detetive (mulher),crime,detetive,espia,investigadora,investigar,mulher
+🕵️‍♂️|detetive (homem),detective (homem),espião,homem,investigador
+🕵️‍♀️|detetive (mulher),detective (mulher),crime,detetive,espia,investigadora,investigar,mulher
 💂|capacete,guarda,londres,palácio de buckingham
 💂‍♂️|segurança (homem),guarda,homem,uniforme
 💂‍♀️|segurança (mulher),capacete,guarda,londres,mulher,palácio de buckingham,uniforme
 🥷|assassino,escondido,lutador,oculto,secreto,soldado
 👷|pedreiro,capacete,chapéu,construção,empreiteiro,obras,pessoa construtora,remodelação,reparação,trabalhador,trabalhador da construção civil,trolha
 👷‍♂️|operário da construção civil,construção,homem,trabalhador,trabalhador da construção civil
-👷‍♀️|operária da construção civil,capacete,capacete de proteção,construção,mulher,trabalhadora,trabalhadora da construção civil
+👷‍♀️|operária da construção civil,capacete,capacete de proteção,capacete de protecção,construção,mulher,trabalhadora,trabalhadora da construção civil
 🫅|monarca,nobre,pessoa com coroa,real,rei
 🤴|monarquia,príncipe,realeza
 👸|conto de fadas,fantasia,princesa,rainha,realeza
@@ -430,12 +430,12 @@
 👨‍🦯‍➡️|homem com bengala para cegos: de frente para a direita,a,accessibilidade,cego,de,direita,frente,homem,homem com bengala para cegos,invisual,para
 👩‍🦯|mulher com bengala para cegos,accessibilidade,cega,invisual,mulher
 👩‍🦯‍➡️|mulher com bengala para cegos: de frente para a direita,a,accessibilidade,cega,de,direita,frente,invisual,mulher,mulher com bengala para cegos,para
-🧑‍🦼|pessoa em cadeira de rodas elétrica,acessibilidade,cadeira de rodas
-🧑‍🦼‍➡️|pessoa em cadeira de rodas elétrica: de frente para a direita,a,acessibilidade,cadeira de rodas,de,direita,frente,para,pessoa em cadeira de rodas elétrica
-👨‍🦼|homem em cadeira de rodas elétrica,acessibilidade,cadeira de rodas,homem,homem em cadeira de rodas motorizada
-👨‍🦼‍➡️|homem em cadeira de rodas elétrica: de frente para a direita,a,acessibilidade,cadeira de rodas,de,direita,frente,homem,homem em cadeira de rodas elétrica,homem em cadeira de rodas motorizada,para
-👩‍🦼|mulher em cadeira de rodas elétrica,acessibilidade,cadeira de rodas,mulher,mulher em cadeira de rodas motorizada
-👩‍🦼‍➡️|mulher em cadeira de rodas elétrica: de frente para a direita,a,acessibilidade,cadeira de rodas,de,direita,frente,mulher,mulher em cadeira de rodas elétrica,mulher em cadeira de rodas motorizada,para
+🧑‍🦼|pessoa em cadeira de rodas elétrica,pessoa em cadeira de rodas eléctrica,acessibilidade,cadeira de rodas
+🧑‍🦼‍➡️|pessoa em cadeira de rodas elétrica: de frente para a direita,pessoa em cadeira de rodas eléctrica: de frente para a direita,a,acessibilidade,cadeira de rodas,de,direita,frente,para,pessoa em cadeira de rodas elétrica,pessoa em cadeira de rodas eléctrica
+👨‍🦼|homem em cadeira de rodas elétrica,homem em cadeira de rodas eléctrica,acessibilidade,cadeira de rodas,homem,homem em cadeira de rodas motorizada
+👨‍🦼‍➡️|homem em cadeira de rodas elétrica: de frente para a direita,homem em cadeira de rodas eléctrica: de frente para a direita,a,acessibilidade,cadeira de rodas,de,direita,frente,homem,homem em cadeira de rodas elétrica,homem em cadeira de rodas eléctrica,homem em cadeira de rodas motorizada,para
+👩‍🦼|mulher em cadeira de rodas elétrica,mulher em cadeira de rodas eléctrica,acessibilidade,cadeira de rodas,mulher,mulher em cadeira de rodas motorizada
+👩‍🦼‍➡️|mulher em cadeira de rodas elétrica: de frente para a direita,mulher em cadeira de rodas eléctrica: de frente para a direita,a,acessibilidade,cadeira de rodas,de,direita,frente,mulher,mulher em cadeira de rodas elétrica,mulher em cadeira de rodas eléctrica,mulher em cadeira de rodas motorizada,para
 🧑‍🦽|pessoa em cadeira de rodas manual,acessibilidade,cadeira de rodas
 🧑‍🦽‍➡️|pessoa em cadeira de rodas manual: de frente para a direita,a,acessibilidade,cadeira de rodas,de,direita,frente,para,pessoa em cadeira de rodas manual
 👨‍🦽|homem em cadeira de rodas manual,acessibilidade,cadeira de rodas,homem
@@ -677,15 +677,15 @@
 🐛|lagarta,bicho,insecto,inseto,jardim
 🐜|formiga,insecto,inseto,jardim
 🐝|abelha,insecto,inseto,mel,zangão
-🪲|besouro,bicho,escaravelho,inseto
-🐞|bicho,inseto,jardim,joaninha,natureza,voa voa
-🦗|grilo,gafanhoto,inseto
-🪳|barata,inseto,nojo,praga
+🪲|besouro,bicho,escaravelho,inseto,insecto
+🐞|bicho,inseto,insecto,jardim,joaninha,natureza,voa voa
+🦗|grilo,gafanhoto,inseto,insecto
+🪳|barata,inseto,insecto,nojo,praga
 🕷️|aranha,insecto,inseto
 🕸️|aranha,teia,teia de aranha
 🦂|escorpião (animal),escorpião,signo,zodíaco
 🦟|melga,doença,febre,insecto,inseto,malária,vírus
-🪰|decomposição,doença,inseto,larva,mosca,praga
+🪰|decomposição,doença,inseto,insecto,larva,mosca,praga
 🪱|minhoca
 🦠|ameba,bactéria,micróbio,vírus
 💐|ramo de flores,amor,flor,planta
@@ -854,7 +854,7 @@
 🌐|globo,globo com meridianos,meridianos,mundo,terra
 🗺️|mapa do mundo,mapa,mundo
 🗾|japão,mapa,mapa do japão
-🧭|bússola,direção,navegação,orientação
+🧭|bússola,direção,direcção,navegação,orientação
 🏔️|montanha coberta de neve,frio,montanha,neve
 ⛰️|montanha,monte,serra
 🛘|deslizamento,desastre,montanha,perigo,rochas,terremoto
@@ -926,7 +926,7 @@
 🚊|elétrico,eléctrico,veículo
 🚝|monocarril,veículo
 🚞|comboio de montanha,carruagem,linha ferroviária,montanha,transporte,veículo
-🚋|carro elétrico,carro,comboio elétrico,elétrico,veículo
+🚋|carro elétrico,carro eléctrico,carro,comboio elétrico,comboio eléctrico,elétrico,eléctrico,veículo
 🚌|autocarro,escola,veículo
 🚍|autocarro a aproximar-se,aproximação,autocarro,autocarro a chegar,veículo
 🚎|troleicarro,autocarro,trólei,troleibus,veículo
@@ -948,7 +948,7 @@
 🏍️|mota,corrida,moto,motocicleta,motociclismo,motociclo
 🛵|lambreta,motorizada
 🦽|acessibilidade,cadeira de rodas manual
-🦼|cadeira de rodas elétrica,acessibilidade,cadeira de rodas motorizada
+🦼|cadeira de rodas elétrica,cadeira de rodas eléctrica,acessibilidade,cadeira de rodas motorizada
 🛺|riquexó motorizado,tuk-tuk
 🚲|bicicleta,bicla,ciclismo,veículo
 🛴|trotineta,empurrar com pé,pontapé,trotinete
@@ -987,7 +987,7 @@
 🛰️|espaço,satélite,veículo
 🚀|foguetão,espaço,foguete,veículo
 🛸|disco voador,extraterrestre,ovni
-🛎️|campainha de receção,campainha,paquete,rececionista
+🛎️|campainha de receção,campainha de recepção,campainha,paquete,rececionista
 🧳|bagagem,mala,trólei,viagem
 ⌛|ampulheta terminada,ampulheta,areia,horas,temporizador
 ⏳|ampulheta com areia a cair,ampulheta,areia,horas,temporizador
@@ -1059,7 +1059,7 @@
 ☂️|acessório,chuva,guarda-chuva,meteorologia
 ☔|guarda-chuva com gotas de chuva,acessório,chuva,gotas,guarda-chuva,meteorologia
 ⛱️|guarda-sol na areia,chuva,guarda-chuva no chão,guarda-sol,guarda-sol no chão,meteorologia,sol
-⚡|alta tensão,choque elétrico,eletricidade,perigo,tensão,voltagem
+⚡|alta tensão,choque elétrico,choque eléctrico,eletricidade,electricidade,perigo,tensão,voltagem
 ❄️|floco de neve,frio,meteorologia,neve
 ☃️|boneco,boneco de neve,frio,meteorologia,neve
 ⛄|boneco de neve,boneco de neve sem neve,frio,meteorologia,neve
@@ -1112,7 +1112,7 @@
 🏸|badmínton,jogo,pena,raquete,volante
 🥊|boxe,desporto,luva,luva de boxe,pugilismo,pugilista
 🥋|artes marciais,desporto,karaté,quimono de artes marciais,uniforme
-🥅|baliza,desporto,golo,objetivo,rede
+🥅|baliza,desporto,golo,objetivo,objectivo,rede
 ⛳|bandeira no buraco,buraco,desporto,golfe
 ⛸️|patim de gelo,gelo,patim,patinagem,patinagem no gelo
 🎣|cana de pesca,cana,desporto,peixe,pesca
@@ -1154,7 +1154,7 @@
 🪢|amarrar,corda,fio,nó
 👓|acessório,óculos,olhos
 🕶️|óculos de sol,acessório,escuro,óculos,óculos escuros,olhos
-🥽|mergulho,natação,óculos de proteção,soldagem
+🥽|mergulho,natação,óculos de proteção,óculos de protecção,soldagem
 🥼|bata de laboratório,bata branca,cientista,experiência,médico
 🦺|colete de segurança,colete,emergência,segurança
 👔|acessório,camisa,camisa com gravata,gravata,vestuário
@@ -1212,7 +1212,7 @@
 🎵|música,nota,nota musical,som
 🎶|notas musicais,música,nota,notas
 🎙️|microfone de estúdio,estúdio,microfone,música
-🎚️|controlo de nível,controlo do volume,música,nível,seletor,volume
+🎚️|controlo de nível,controlo do volume,música,nível,seletor,selector,volume
 🎛️|botões de controlo,botões,botões giratórios,comando,música
 🎤|cantar,entretenimento,microfone,música
 🎧|auscultador,intra-auricular,som
@@ -1221,7 +1221,7 @@
 🎺|trompete,instrumento,instrumento musical,música
 🪊|instrumento,música,sopro,triste
 🪗|acordeão,instrumento,música
-🎸|guitarra elétrica,guitarra,instrumento,instrumento musical,música
+🎸|guitarra elétrica,guitarra eléctrica,guitarra,instrumento,instrumento musical,música
 🎹|instrumento,música,teclado,teclado musical
 🎻|instrumento,instrumento musical,música,stradivarius,violino
 🪕|cordas,música
@@ -1237,22 +1237,22 @@
 📟|comunicação
 📠|comunicação,máquina de fax
 🔋|bateria
-🪫|bateria fraca,eletrónico,pilha fraca,pouca bateria,pouca energia
-🔌|ficha elétrica,elétrica,eletricidade,ficha
+🪫|bateria fraca,eletrónico,electrónico,pilha fraca,pouca bateria,pouca energia
+🔌|ficha elétrica,ficha eléctrica,elétrica,eléctrica,eletricidade,electricidade,ficha
 💻|computador portátil,computador,pessoal,portátil
 🖥️|computador de secretária,computador,secretária
 🖨️|computador,impressora
 ⌨️|computador,teclado
 🖱️|rato de computador,computador,rato
 🖲️|computador,informática,rato
-💽|minidisco,computador,disco,ótico
+💽|minidisco,computador,disco,ótico,óptico
 💾|computador,disco,disquete
-💿|disco ótico,computador,disco,óptico,ótico
+💿|disco ótico,disco óptico,computador,disco,óptico,ótico
 📀|computador,disco,óptico,ótico
 🧮|ábaco,cálculo
 🎥|câmara de filmar,câmara,entretenimento,filme
 🎞️|fotogramas,filme,película
-📽️|projetor de cinema,filme,projetor,vídeo
+📽️|projetor de cinema,projector de cinema,filme,projetor,vídeo
 🎬|cena,cinema,claquete,filme
 📺|televisor,televisão,vídeo
 📷|máquina fotográfica,câmara,foto,fotografia,vídeo
@@ -1262,8 +1262,8 @@
 🔍|lupa inclinada para a esquerda,ampliar,ferramenta,investigar,lupa,pesquisar
 🔎|lupa inclinada para a direita,ferramenta,investigação,lupa,pesquisar
 🕯️|luz,vela
-💡|desenho,elétrica,eletricidade,ideia,lâmpada,luz
-🔦|elétrica,eletricidade,ferramenta,lanterna,luz,utensílio
+💡|desenho,elétrica,eléctrica,eletricidade,electricidade,ideia,lâmpada,luz
+🔦|elétrica,eléctrica,eletricidade,electricidade,ferramenta,lanterna,luz,utensílio
 🏮|lanterna de papel vermelha,japonês,lanterna,lanterna de papel,lanterna vermelha de papel,luz,vermelha
 🪔|lâmpada diya
 📔|bloco de notas com capa decorada,bloco de notas,caderno,capa,decorada,livro
@@ -1292,7 +1292,7 @@
 💷|banco,dinheiro,libra,moeda,nota,nota bancária,nota de libra
 💸|dinheiro com asas,asas,banco,dinheiro,dólar,nota,voar
 💳|banco,cartão,cartão de crédito,crédito,dinheiro,pagamento
-🧾|comprovativo,contabilidade,fatura,prova,recibo,tesouraria
+🧾|comprovativo,contabilidade,fatura,factura,prova,recibo,tesouraria
 💹|gráfico a subir com iene,ascendente,banco,crescimento,dinheiro,gráfico,iene,mercado,moeda,subida,tendência
 ✉️|carta,correio,correspondência
 📧|carta,correio,correspondência
@@ -1331,7 +1331,7 @@
 📍|alfinete de cabeça redonda,alfinete,localização,mapa,redondo
 📎|clipe
 🖇️|clipes ligados,clipes,clipes de papel,ligação
-📏|régua,ângulo,matemática,régua reta
+📏|régua,ângulo,matemática,régua reta,régua recta
 📐|esquadro,ângulo,matemática,régua,triângulo
 ✂️|cortar,ferramenta,tesoura,utensílio
 🗃️|caixa de arquivo,arquivo,caixa,caixa de arquivos,fichas
@@ -1341,7 +1341,7 @@
 🔓|cadeado aberto,aberto,cadeado,destrancado
 🔏|aparo,cadeado,cadeado com caneta,caneta,privacidade,tinta
 🔐|cadeado,cadeado com chave,cadeado fechado com chave,chave,fechado,seguro
-🔑|abrir,chave,chave-mestra,fechadura,palavra-passe,proteção,senha
+🔑|abrir,chave,chave-mestra,fechadura,palavra-passe,proteção,protecção,senha
 🗝️|antiga,chave,fechadura,pista
 🔨|bricolage,ferramenta,martelo
 🪓|cortar,cutelo,lenha,machado,madeira,rachar
@@ -1360,14 +1360,14 @@
 🔩|ferramenta,parafuso,porca,porca e parafuso
 ⚙️|roda dentada,engrenagem,ferramenta
 🗜️|grampo,braçadeira,ferramenta,torno
-⚖️|balança (objeto),balança,ferramenta,instrumento,justiça,pesar,peso,zodíaco
+⚖️|balança (objeto),balança (objecto),balança,ferramenta,instrumento,justiça,pesar,peso,zodíaco
 🦯|bengala para invisuais,acessibilidade,cegueira,invisual
 🔗|ligação,corrente,elos
 ⛓️‍💥|corrente partida,algemas,corrente,liberdade,partir,quebrar,romper
 ⛓️|corrente,correntes
 🪝|gancho,prender
 🧰|mala de ferramentas,caixa,caixa de ferramentas,caixa vermelha,ferramenta,mecânico
-🧲|íman,atração,ferradura,magnético
+🧲|íman,atração,atracção,ferradura,magnético
 🪜|degrau,descer,escada,subir,trepar
 🪏|pá,buraco,cavar,pazinha
 ⚗️|balão de vidro,alambique,ferramenta,instrumento,química
@@ -1377,7 +1377,7 @@
 🔬|ciência,experiência,ferramenta,instrumento,microscópio
 🔭|ciência,ferramenta,instrumento,telescópio
 📡|antena parabólica,antena,comunicação,parabólica,satélite
-💉|agulha,doente,injeção,medicamento,médico,remédio,seringa
+💉|agulha,doente,injeção,injecção,medicamento,médico,remédio,seringa
 🩸|doação de sangue,ferimento,gota de sangue,medicina,menstruação
 💊|comprimido,doente,medicina,médico,remédio
 🩹|penso rápido,penso
@@ -1397,7 +1397,7 @@
 🛁|banheira,banho
 🪤|apanhar,armadilha,engodo,isca,isco,queijo,rato,ratoeira
 🪒|lâmina de barbear,afiada,afiado,barbear,gilete
-🧴|champô,frasco de loção,hidratante,loção,protetor solar
+🧴|champô,frasco de loção,hidratante,loção,protetor solar,protector solar
 🧷|alfinete de dama,fralda,punk rock
 🧹|bruxa,limpar,varrer,vassoura
 🧺|agricultura,cesta,cesto de roupa,piquenique
@@ -1414,7 +1414,7 @@
 🪦|campa,cemitério,lápide,morte,sepultura
 ⚱️|urna
 🧿|amuleto,mau-olhado,missanga,olho grego,olho turco,talismã
-🪬|amuleto,chamsá,cinco dedos da mão,hamsá,islão,judaísmo,mão,mão de deus,mão de fátima,mau-olhado,palma da mão com cinco dedos estendidos,proteção,talismã
+🪬|amuleto,chamsá,cinco dedos da mão,hamsá,islão,judaísmo,mão,mão de deus,mão de fátima,mau-olhado,palma da mão com cinco dedos estendidos,proteção,protecção,talismã
 🗿|cara,estátua,ilha de páscoa
 🪧|cartaz,manifestação,placa,placar,protesto,sinal
 🪪|carta de condução,cartão de identidade,cartão de identificação,credenciais,identidade,identificação,passe,segurança
@@ -1444,14 +1444,14 @@
 🔞|proibido a menores de dezoito anos,dezoito,menor de idade,menores,proibido,restrição
 ☢️|radiação,radioativo,símbolo,sinal
 ☣️|perigo biológico,biológico,risco,símbolo,sinal
-⬆️|cardeal,direção,norte,seta,seta para cima
-↗️|direção,intermédio,nordeste,seta,seta para cima e para a direita
-➡️|cardeal,direção,este,leste,seta,seta para a direita
-↘️|seta para a direita e para baixo,direção,intermédio,seta,seta para baixo e para a direita,sudeste
-⬇️|cardeal,direção,para baixo,seta,seta para baixo,sul
-↙️|direção,intermédio,seta,seta para baixo e para a esquerda,sudoeste
-⬅️|cardeal,direção,oeste,seta,seta para a esquerda
-↖️|direção,intermédio,noroeste,seta,seta para cima e para a esquerda
+⬆️|cardeal,direção,direcção,norte,seta,seta para cima
+↗️|direção,direcção,intermédio,nordeste,seta,seta para cima e para a direita
+➡️|cardeal,direção,direcção,este,leste,seta,seta para a direita
+↘️|seta para a direita e para baixo,direção,direcção,intermédio,seta,seta para baixo e para a direita,sudeste
+⬇️|cardeal,direção,direcção,para baixo,seta,seta para baixo,sul
+↙️|direção,direcção,intermédio,seta,seta para baixo e para a esquerda,sudoeste
+⬅️|cardeal,direção,direcção,oeste,seta,seta para a esquerda
+↖️|direção,direcção,intermédio,noroeste,seta,seta para cima e para a esquerda
 ↕️|para baixo,para cima,seta,seta para cima e para baixo
 ↔️|seta para a esquerda e para a direita,direita,esquerda,seta,seta para esquerda e direita
 ↩️|seta para a direita com curva para a esquerda,curva,esquerda,seta
@@ -1508,7 +1508,7 @@
 ⏸️|botão de pausa,barra,colocar em pausa,duas barras,dupla,pausa
 ⏹️|botão de paragem,parar,quadrado
 ⏺️|botão de gravação,círculo,gravar
-⏏️|botão de ejeção,ejecção,ejectar,ejetar
+⏏️|botão de ejeção,botão de ejecção,ejecção,ejectar,ejetar
 🎦|câmara,filme
 🔅|botão de escurecer,baixo,brilho,escurecer,luminosidade
 🔆|botão de brilho,brilhante,brilho,luminosidade,luz
@@ -1521,7 +1521,7 @@
 ⚧️|símbolo transgénero,transgénero
 ✖️|multiplicação,cancelar,multiplicar,sinal de multiplicação
 ➕|adição,mais,matemática,símbolo de adição,sinal de adição
-➖|subtração,matemática,menos,sinal de subtração,subtracção
+➖|subtração,subtracção,matemática,menos,sinal de subtração,sinal de subtracção
 ➗|divisão,matemática,sinal de divisão
 🟰|igualdade,matemática,resposta,sinal de igual
 ♾️|infinito,eternidade,ilimitado
@@ -1541,9 +1541,9 @@
 📛|dístico,crachá,nome
 🔰|símbolo japonês para principiante,amarelo,divisa,insígnia,japonês,principiante,verde
 ⭕|círculo vermelho oco,círculo,círculo grande oco,encarnado,grande,vermelho
-✅|botão de visto,botão,marca de seleção branca,verificação,visto
+✅|botão de visto,botão,marca de seleção branca,marca de selecção branca,verificação,visto
 ☑️|caixa com visto,caixa,marca de verificação,visto
-✔️|visto,marca de seleção,marca de verificação,marcado
+✔️|visto,marca de seleção,marca de selecção,marca de verificação,marcado
 ❌|cruz,cancelar,multiplicação,multiplicar
 ❎|botão com cruz,multiplicação,multiplicar,quadrado
 ➰|caracol,laço,laço encaracolado
@@ -1719,7 +1719,7 @@
 🇪🇦|bandeira: ceuta e melilha
 🇪🇨|bandeira: equador,bandeira
 🇪🇪|bandeira: estónia
-🇪🇬|bandeira: egito,bandeira
+🇪🇬|bandeira: egito,bandeira: egipto,bandeira
 🇪🇭|bandeira: sara ocidental
 🇪🇷|bandeira: eritreia,bandeira
 🇪🇸|bandeira: espanha,bandeira
@@ -1916,10 +1916,10 @@
 ↑|seta a apontar para cima,cima,para cima,seta
 →|seta a apontar para a direita,direita,para a direita,seta
 ↓|seta a apontar para baixo,baixo,para baixo,seta
-↖|direção,intercardinal,intermédio,noroeste,seta,seta para cima e para a esquerda
-↗|direção,intercardinal,intermédio,nordeste,seta,seta para cima e para a direita
-↘|seta para a direita e para baixo,direção,intercardinal,intermédio,seta,seta para baixo e para a direita,sudeste
-↙|direção,intercardinal,intermédio,seta,seta para baixo e para a esquerda,sudoeste
+↖|direção,direcção,intercardinal,intermédio,noroeste,seta,seta para cima e para a esquerda
+↗|direção,direcção,intercardinal,intermédio,nordeste,seta,seta para cima e para a direita
+↘|seta para a direita e para baixo,direção,direcção,intercardinal,intermédio,seta,seta para baixo e para a direita,sudeste
+↙|direção,direcção,intercardinal,intermédio,seta,seta para baixo e para a esquerda,sudoeste
 ↔|seta para a esquerda e para a direita,direita,esquerda,seta,seta para esquerda e direita
 ↕|para baixo,para cima,seta,seta para cima e para baixo
 ↩|seta para a direita com curva para a esquerda,curva,esquerda,seta
@@ -1956,7 +1956,7 @@ $|dinheiro,dólar,dólar norte-americano
 ₸|tenge cazaque
 ¤|moeda desconhecida
 +|adição,adicionar,mais,sinal de mais
-−|menos,sinal de menos,subtração,subtrair
+−|menos,sinal de menos,subtração,subtracção,subtrair
 ×|sinal de multiplicação,multiplicação,multiplicar,vezes
 ÷|sinal de divisão,dividir,divisão,símbolo,sinal
 =|é igual a,igual
@@ -1979,7 +1979,7 @@ $|dinheiro,dólar,dólar norte-americano
 ∈|pertence,conjunto,contém,elemento,elemento de,membro,pertence a
 ∉|não pertence
 ∩|conjunto,interseção,intersecção
-∪|coleção,conjunto,reunião,união
+∪|coleção,colecção,conjunto,reunião,união
 ⊂|subconjunto de,conjunto,subconjunto
 ⊃|superconjunto,conjunto,matemática,operador
 ∅|conjunto vazio,conjunto,matemática,operador,vazio
@@ -2021,8 +2021,8 @@ $|dinheiro,dólar,dólar norte-americano
 »|aspas em linha direitas,ângulo,aspas,aspas francesas,chevron,direita
 ‘|apóstrofo,apóstrofo esquerdo,aspas,aspas curvas
 ’|apóstrofo,apóstrofo direito,aspas,aspas curvas
-“|aspas,aspas duplas,aspas esquerdas,aspas inteligentes,aspas retas
-”|aspas,aspas direitas,aspas duplas,aspas inteligentes,aspas retas
+“|aspas,aspas duplas,aspas esquerdas,aspas inteligentes,aspas retas,aspas rectas
+”|aspas,aspas direitas,aspas duplas,aspas inteligentes,aspas retas,aspas rectas
 „|aspas direitas inferiores,aspas,aspas duplas,aspas inferiores,aspas inteligentes
 †|obelisco,adaga,cruz,óbelo
 ‡|obelisco duplo,adaga,duplo,obelisco,óbelo
@@ -2036,7 +2036,7 @@ $|dinheiro,dólar,dólar norte-americano
 ◉|círculo vazio com círculo preenchido,círculo,duplo,preenchido,vazio
 ◎|alvo,círculo duplo,círculos concêntricos
 #|cardinal,cerquilha,hashtag,número
-*|asterisco,caráter universal,estrela
+*|asterisco,caráter universal,carácter universal,estrela
 @|arroba,marca de arroba,sinal de arroba
 &|e comercial,e,et
 %|por cento,percentagem,porcento
@@ -2060,6 +2060,6 @@ $|dinheiro,dólar,dólar norte-americano
 ⇤|seta para a esquerda com barra
 ⇞|seta para cima com traço duplo,cima,duplo,seta,traço
 ⇟|seta para baixo com traço duplo,baixo,duplo,seta,traço
-⏏|botão de ejeção,ejecção,ejectar,ejetar
+⏏|botão de ejeção,botão de ejecção,ejecção,ejectar,ejetar
 ⌨|computador,teclado
 ⚙|roda dentada,engrenagem,ferramenta

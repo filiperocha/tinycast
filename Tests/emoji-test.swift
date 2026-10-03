@@ -89,6 +89,16 @@ struct EmojiTests {
                 "\(name) pack is reachable by its own language")
         }
 
+        let ptPT =
+            (try? String(
+                contentsOf: packDirectory.appendingPathComponent("pt-PT.txt"), encoding: .utf8)) ?? ""
+        let pt =
+            (try? String(contentsOf: packDirectory.appendingPathComponent("pt.txt"), encoding: .utf8))
+            ?? ""
+        expect(
+            ptPT.contains("direção") && ptPT.contains("direcção") && !pt.contains("direcção"),
+            "pt-PT matches both spellings of the 1990 reform; pt keeps Brazil's")
+
         for (preferred, expected) in [
             (["en-US"], []),
             (["en-GB", "fr-CA"], ["fr"]),

@@ -33,6 +33,24 @@ const KEYWORD_LOCALES = {
 // A regional CLDR locale holds only what differs from its language, so it is read over the parent.
 const CLDR_PARENT = { "pt-PT": "pt" };
 
+// CLDR's pt-PT follows the 1990 spelling reform; many still type the older forms, so both match.
+const PT_PRE_1990 = {
+  arquiteta: "arquitecta", arquiteto: "arquitecto", ator: "actor", atração: "atracção",
+  atriz: "actriz", caráter: "carácter", cético: "céptico", coleção: "colecção",
+  detetive: "detective", direção: "direcção", egito: "egipto", ejeção: "ejecção",
+  elétrica: "eléctrica", elétrico: "eléctrico", eletricidade: "electricidade",
+  eletricista: "electricista", eletrónico: "electrónico", espetador: "espectador",
+  fatura: "factura", injeção: "injecção", inseto: "insecto", interseção: "intersecção",
+  objetivo: "objectivo", objeto: "objecto", ótico: "óptico", projetor: "projector",
+  proteção: "protecção", protetor: "protector", receção: "recepção", reta: "recta",
+  retas: "rectas", seleção: "selecção", seletor: "selector", subtração: "subtracção",
+  trator: "tractor",
+};
+const preReformPortugueseOf = (term) =>
+  term.replace(/[\p{L}]+/gu, (word) => PT_PRE_1990[word] ?? word);
+// A second spelling a locale's users type, added beside each term.
+const SPELLING_TWINS = { "pt-PT": preReformPortugueseOf };
+
 const GROUP_TO_CATEGORY = {
   "Smileys & Emotion": "sp",
   "People & Body": "sp",
@@ -371,12 +389,12 @@ function hiraganaOf(term) {
 }
 
 // Search-only terms, never displayed, so the typographic apostrophe folds to the one keyboards type.
-function localizedTermsFor(glyph, english, annotations) {
+function localizedTermsFor(glyph, english, annotations, twin) {
   const annotation = annotationOf(glyph, annotations);
   const out = [];
   for (const raw of [...(annotation?.tts ?? []), ...(annotation?.default ?? [])]) {
     const term = cleanField(raw.toLowerCase().replaceAll("’", "'"));
-    for (const t of new Set([term, hiraganaOf(term)])) {
+    for (const t of new Set([term, hiraganaOf(term), twin?.(term)])) {
       if (t && !english.has(t) && !out.includes(t)) out.push(t);
     }
   }
@@ -384,11 +402,11 @@ function localizedTermsFor(glyph, english, annotations) {
 }
 
 // `glyph|terms` for every catalog glyph CLDR names in the locale, minus what English already says.
-function keywordPack(records, annotations) {
+function keywordPack(records, annotations, twin) {
   const pack = [];
   for (const [glyph, name, , , keywords] of records) {
     const english = new Set([name, ...name.split(" "), ...keywords.split(",")]);
-    const terms = localizedTermsFor(glyph, english, annotations);
+    const terms = localizedTermsFor(glyph, english, annotations, twin);
     if (terms.length > 0) pack.push(`${glyph}|${terms.join(",")}`);
   }
   return pack;
@@ -484,7 +502,7 @@ async function main() {
   fs.rmSync(packDir, { recursive: true, force: true });
   fs.mkdirSync(packDir, { recursive: true });
   locales.forEach((locale, i) => {
-    const pack = keywordPack(lines, localized[i]);
+    const pack = keywordPack(lines, localized[i], SPELLING_TWINS[locale]);
     if (pack.length <= 1500)
       throw new Error(`suspiciously few ${locale} keywords: ${pack.length}`);
     const file = path.join(packDir, `${KEYWORD_LOCALES[locale]}.txt`);
