@@ -453,6 +453,13 @@ final class AppCore {
             paletteCoordinator.showPalette(mode: .launcher, restoreAnyMode: true)
             return
         }
+        // Not an extension here: Tinycast ships these itself, so the link opens ours.
+        if link.ownerOrAuthor?.lowercased() == "raycast",
+            let command = CommandID(raycastExtension: link.extensionName, command: link.commandName)
+        {
+            launcherCoordinator.runCommand(command, input: link.fallbackText)
+            return
+        }
         extensionCoordinator.runDeepLink(link)
     }
 

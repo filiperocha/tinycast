@@ -47,6 +47,17 @@ enum CommandID: String, CaseIterable, Sendable {
     case support = "command:support"
     case quit = "command:quit"
 
+    /// Raycast's own commands that ship here natively, by their `raycast://extensions/raycast/…` path.
+    init?(raycastExtension extensionName: String, command: String) {
+        switch (extensionName.lowercased(), command.lowercased()) {
+        case ("file-search", "search-files"): self = .searchFiles
+        case ("raycast-notes", "create-note"): self = .createNote
+        case ("clipboard-history", "clipboard-history"): self = .clipboardHistory
+        case ("emoji-symbols", "search-emoji-symbols"): self = .searchEmoji
+        default: return nil
+        }
+    }
+
     var name: String {
         switch self {
         case .quickAI: return "Quick AI"

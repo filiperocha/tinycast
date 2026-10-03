@@ -160,6 +160,20 @@ final class LauncherCoordinator {
         }
     }
 
+    /// A deep link's `fallbackText` seeds the commands that take text; the rest run as usual.
+    func runCommand(_ id: CommandID, input: String?) {
+        guard let input, !input.isEmpty else { return runCommand(id) }
+        switch id {
+        case .searchFiles:
+            fileSearchCoordinator.show(query: input)
+        case .createNote:
+            dismissPalette()
+            notesCoordinator.createNote(text: input)
+        default:
+            runCommand(id)
+        }
+    }
+
     /// The one funnel a built-in command runs through, from a palette row or its global shortcut.
     func runCommand(_ id: CommandID) {
         switch id {

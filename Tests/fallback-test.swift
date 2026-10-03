@@ -22,6 +22,7 @@ struct FallbackTests {
         ordering()
         headers()
         verbs()
+        raycastBuiltIns()
         print("\(passes) passed, \(failures) failed")
         if failures > 0 { exit(1) }
     }
@@ -115,6 +116,20 @@ struct FallbackTests {
             "the default limit keeps a repository URL whole",
             Fallback.sectionTitle(query: url) == "Use “\(url)” with…",
             "got \(Fallback.sectionTitle(query: url))")
+    }
+
+    // MARK: - Raycast built-ins
+
+    static func raycastBuiltIns() {
+        check(
+            "Raycast's File Search link opens ours",
+            CommandID(raycastExtension: "file-search", command: "search-files") == .searchFiles)
+        check(
+            "Raycast's Create Note link opens ours",
+            CommandID(raycastExtension: "Raycast-Notes", command: "create-note") == .createNote)
+        check(
+            "a Raycast command we don't ship stays unmatched",
+            CommandID(raycastExtension: "translator", command: "translate") == nil)
     }
 
     // MARK: - Verbs

@@ -24,6 +24,8 @@ final class NotesCoordinator {
     @ObservationIgnored private var operationTask: Task<Void, Never>?
     @ObservationIgnored private var operationID = 0
     @ObservationIgnored private var pendingIssue: NotesStore.Issue?
+    /// Written into the note a pending create makes, then cleared.
+    @ObservationIgnored private var pendingNoteText: String?
     private var pendingPresentation: Presentation?
     private var enablementGeneration = 0
     private(set) var isSwitcherPresented = false
@@ -130,7 +132,18 @@ final class NotesCoordinator {
     }
 
     func createNote() {
+        createNote(text: nil)
+    }
+
+    /// `text` becomes the new note's body, as a deep link's `fallbackText` asks.
+    func createNote(text: String?) {
+        pendingNoteText = text
         request(.create)
+    }
+
+    private func fillCreatedNote() {
+        if let text = pendingNoteText { store.updateSource(text) }
+        pendingNoteText = nil
     }
 
     func searchNotes() {
@@ -411,6 +424,7 @@ final class NotesCoordinator {
             guard loaded, settings.notesEnabled, !Task.isCancelled else { return }
             // The note this task just made satisfies a create still pending; never make a second.
             if presentation == .create, pendingPresentation == .create {
+                fillCreatedNote()
                 pendingPresentation = .editor
             }
             guard let next = pendingPresentation else { return }
@@ -429,6 +443,7 @@ final class NotesCoordinator {
             guard await store.create(), settings.notesEnabled, !Task.isCancelled,
                 generation == presentationGeneration
             else { return }
+            fillCreatedNote()
             closeSwitcher()
             windowController.show(focusEditor: true)
         case .search:
