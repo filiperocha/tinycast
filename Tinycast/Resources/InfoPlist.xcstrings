@@ -1,0 +1,68 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "CFBundleName": {},
+    "NSAppleEventsUsageDescription": {
+      "localizations": {
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Tinycast usa automação para executar acções do sistema que você executa explicitamente."
+          }
+        }
+      }
+    },
+    "NSBluetoothAlwaysUsageDescription": {
+      "localizations": {
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Tinycast só usa o acesso ao Bluetooth quando executa a acção Activar/desactivar Bluetooth."
+          }
+        }
+      }
+    },
+    "NSCalendarsFullAccessUsageDescription": {
+      "localizations": {
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Tinycast lê os eventos de hoje e de amanhã para que possa entrar numa reunião a partir do lançador."
+          }
+        }
+      }
+    },
+    "NSCameraUsageDescription": {
+      "localizations": {
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Tinycast mostra uma pré-visualização da câmara para se ver, e tira uma fotografia para a área de transferência."
+          }
+        }
+      }
+    },
+    "NSHumanReadableCopyright": {},
+    "NSRemindersFullAccessUsageDescription": {
+      "localizations": {
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Tinycast permite que as extensões que executa leiam e editem os seus lembretes."
+          }
+        }
+      }
+    },
+    "Tinycast Backup": {
+      "localizations": {
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cópia de segurança do Tinycast"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
