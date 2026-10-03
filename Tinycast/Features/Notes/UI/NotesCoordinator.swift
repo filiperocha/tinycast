@@ -141,9 +141,10 @@ final class NotesCoordinator {
         request(.create)
     }
 
-    private func fillCreatedNote() {
-        if let text = pendingNoteText { store.updateSource(text) }
-        pendingNoteText = nil
+    /// Taken once, so a later plain create starts empty.
+    private func takePendingNoteText() -> String {
+        defer { pendingNoteText = nil }
+        return pendingNoteText ?? ""
     }
 
     func searchNotes() {
@@ -415,7 +416,9 @@ final class NotesCoordinator {
         loadTask = Task { [weak self] in
             guard let self else { return }
             // Create is its own load: the collection it would wait for is the one it adds to.
-            let loaded = presentation == .create ? await store.create() : await store.start()
+            let loaded =
+                presentation == .create
+                ? await store.create(source: takePendingNoteText()) : await store.start()
             guard generation == enablementGeneration else {
                 if !settings.notesEnabled { store.stop() }
                 return
@@ -424,7 +427,6 @@ final class NotesCoordinator {
             guard loaded, settings.notesEnabled, !Task.isCancelled else { return }
             // The note this task just made satisfies a create still pending; never make a second.
             if presentation == .create, pendingPresentation == .create {
-                fillCreatedNote()
                 pendingPresentation = .editor
             }
             guard let next = pendingPresentation else { return }
@@ -440,10 +442,9 @@ final class NotesCoordinator {
             windowController.show(focusEditor: true)
         case .create:
             let generation = presentationGeneration
-            guard await store.create(), settings.notesEnabled, !Task.isCancelled,
+            guard await store.create(source: takePendingNoteText()), settings.notesEnabled, !Task.isCancelled,
                 generation == presentationGeneration
             else { return }
-            fillCreatedNote()
             closeSwitcher()
             windowController.show(focusEditor: true)
         case .search:
