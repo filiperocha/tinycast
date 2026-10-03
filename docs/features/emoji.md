@@ -44,7 +44,8 @@ are pure.
   an English name match still ranks first. An English-only Mac reads no pack. The generator drops terms
   English already has, folds `’` to `'`, and gives katakana a hiragana twin, since an IME shows hiragana
   until conversion. Packs ship for German, Spanish, French, Japanese, Korean, Portuguese, Russian and
-  both Chinese scripts.
+  both Chinese scripts. European Portuguese has its own pack (`pt-PT` reads `autocarro` where `pt` reads
+  `ônibus`); CLDR stores only its differences, so the generator reads it over `pt`.
 - **Search text is folded once, at load.** `EmojiIndex` keeps a `FuzzyMatch.Candidate` for each name
   and keyword, so a keystroke folds only the query. Folding non-ASCII keywords per keystroke made one
   pack cost 5–7× the English-only search.

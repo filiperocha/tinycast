@@ -24,10 +24,14 @@ const KEYWORD_LOCALES = {
   ja: "ja",
   ko: "ko",
   pt: "pt",
+  "pt-PT": "pt-PT",
   ru: "ru",
   zh: "zh-Hans",
   "zh-Hant": "zh-Hant",
 };
+
+// A regional CLDR locale holds only what differs from its language, so it is read over the parent.
+const CLDR_PARENT = { "pt-PT": "pt" };
 
 const GROUP_TO_CATEGORY = {
   "Smileys & Emotion": "sp",
@@ -319,7 +323,9 @@ async function annotationsFor(locale, cacheDir) {
       cacheDir,
     ),
   ]);
+  const parent = CLDR_PARENT[locale] ? await annotationsFor(CLDR_PARENT[locale], cacheDir) : {};
   return {
+    ...parent,
     ...JSON.parse(derived).annotationsDerived.annotations,
     ...JSON.parse(full).annotations.annotations,
   };

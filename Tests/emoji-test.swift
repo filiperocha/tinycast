@@ -95,7 +95,8 @@ struct EmojiTests {
             (["fr-FR", "de-DE", "fr-CA"], ["fr", "de"]),
             (["zh-HK"], ["zh-Hant"]),
             (["zh-Hans-CN", "zh-Hant-TW"], ["zh-Hans", "zh-Hant"]),
-            (["pt-PT"], ["pt"]),
+            (["pt-PT"], ["pt-PT"]),
+            (["pt-BR"], ["pt"]),
             (["sr-Latn-RS"], [])
         ] {
             expect(
