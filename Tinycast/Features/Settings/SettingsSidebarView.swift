@@ -25,10 +25,10 @@ struct SettingsSidebarView: View {
     private var browse: some View {
         List(selection: selection) {
             ForEach(SettingsSection.allCases) { section in
-                Section(section.title) {
+                Section {
                     ForEach(section.tabs) { tab in
                         Label {
-                            Text(tab.title)
+                            Text(localizing: tab.title)
                         } icon: {
                             SettingsTabIcon(
                                 systemImage: tab.systemImage,
@@ -38,6 +38,8 @@ struct SettingsSidebarView: View {
                         }
                         .tag(tab)
                     }
+                } header: {
+                    Text(localizing: section.title)
                 }
             }
         }
@@ -94,7 +96,7 @@ private struct SettingsSearchResultRow: View {
     var body: some View {
         Label {
             VStack(alignment: .leading, spacing: Theme.Spacing.xxs) {
-                Text(entry.title).lineLimit(1)
+                Text(localizing: entry.title).lineLimit(1)
                 Text(entry.breadcrumb)
                     .font(.caption)
                     .foregroundStyle(.secondary)

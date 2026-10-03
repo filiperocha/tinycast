@@ -469,7 +469,7 @@ private struct ExtensionDisclosure: View {
     /// A step below the pane's section headers; nothing here sets a heading in caps.
     private func heading(_ title: String) -> some View {
         GridRow {
-            Text(title)
+            Text(localizing: title)
                 .font(.caption.weight(.medium))
                 .foregroundStyle(.tertiary)
                 .gridCellColumns(2)
@@ -513,7 +513,7 @@ private struct SettingsCardRow<Control: View>: View {
         GridRow(alignment: .center) {
             VStack(alignment: .leading, spacing: Theme.Spacing.xxs) {
                 HStack(spacing: Theme.Spacing.sm) {
-                    Text(title)
+                    Text(localizing: title)
                     if let badge {
                         Text(badge)
                             .font(.caption2)
@@ -524,7 +524,7 @@ private struct SettingsCardRow<Control: View>: View {
                     }
                 }
                 if let detail, !detail.isEmpty {
-                    Text(detail)
+                    Text(localizing: detail)
                         .font(.caption)
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
@@ -759,13 +759,13 @@ private struct ExtensionPreferenceRow: View {
         case .dropdown:
             Picker("", selection: $text) {
                 ForEach(schema.options, id: \.value) { option in
-                    Text(option.title).tag(option.value)
+                    Text(localizing: option.title).tag(option.value)
                 }
             }
             .labelsHidden()
             .onChange(of: text) { _, value in save(value) }
         case .password:
-            SecureField("", text: $text, prompt: schema.placeholder.map(Text.init))
+            SecureField("", text: $text, prompt: schema.placeholder.map { Text($0) })
                 .textFieldStyle(.roundedBorder)
                 .labelsHidden()
                 .pointerStyle(.horizontalText)
@@ -779,7 +779,7 @@ private struct ExtensionPreferenceRow: View {
                 Button("Choose…", action: choosePath)
             }
         case .textfield:
-            TextField("", text: $text, prompt: schema.placeholder.map(Text.init))
+            TextField("", text: $text, prompt: schema.placeholder.map { Text($0) })
                 .textFieldStyle(.roundedBorder)
                 .labelsHidden()
                 .pointerStyle(.horizontalText)

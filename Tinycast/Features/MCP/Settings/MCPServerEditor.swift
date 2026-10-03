@@ -241,7 +241,7 @@ struct MCPServerEditor: View {
                     case .signingIn: Button("Cancel", action: cancelOperation)
                     default: Button("Sign In", action: signIn).disabled(operation != nil)
                     }
-                    Text(authenticationStatus.label)
+                    Text(localizing: authenticationStatus.label)
                         .font(.caption).foregroundStyle(.secondary)
                 }
             }

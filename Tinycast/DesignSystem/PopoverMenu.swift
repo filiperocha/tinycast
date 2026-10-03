@@ -203,7 +203,7 @@ struct PopoverMenu: View {
     }
 
     private func headerLabel(_ text: String) -> some View {
-        Text(text)
+        Text(localizing: text)
             .font(metrics.typography.sectionHeader)
             .foregroundStyle(.secondary)
             .lineLimit(1)
@@ -311,7 +311,7 @@ struct PopoverMenu: View {
 
     /// Tighter below than above, so a header belongs to the rows under it, not between two groups.
     private func sectionLabel(_ title: String, isFirst: Bool) -> some View {
-        Text(title)
+        Text(localizing: title)
             .font(metrics.typography.sectionHeader)
             .foregroundStyle(.secondary)
             .lineLimit(1)
@@ -385,7 +385,7 @@ private struct PopoverMenuRow: View {
                     .lineLimit(1)
                 Spacer(minLength: metrics.spacing.sm)
                 if let detail = item.detail {
-                    Text(detail)
+                    Text(localizing: detail)
                         // Smaller than the title it trails: a stated value, not a second label.
                         .font(metrics.typography.keyCap)
                         .foregroundStyle(.secondary)

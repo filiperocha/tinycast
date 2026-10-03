@@ -25,7 +25,7 @@ struct AIModelSelectionRows<ModelLabel: View, EffortLabel: View>: View {
                 ForEach(modelGroups) { group in
                     Section(group.title) {
                         ForEach(group.options) { option in
-                            Text(option.title).tag(Optional(option.selection))
+                            Text(localizing: option.title).tag(Optional(option.selection))
                         }
                     }
                 }
@@ -35,7 +35,7 @@ struct AIModelSelectionRows<ModelLabel: View, EffortLabel: View>: View {
             if !efforts.isEmpty {
                 Picker(selection: effortBinding) {
                     ForEach(efforts) { effort in
-                        Text(effort.title).tag(effort.id)
+                        Text(localizing: effort.title).tag(effort.id)
                     }
                 } label: {
                     effortLabel()

@@ -51,7 +51,7 @@ struct GeneralSettingsView: View {
                 }
                 Picker(selection: $settings.popToRootTimeout) {
                     ForEach(PopToRootTimeout.allCases) { timeout in
-                        Text(timeout.title).tag(timeout)
+                        Text(localizing: timeout.title).tag(timeout)
                     }
                 } label: {
                     SettingsRowTitle(.generalGeneral, "Pop to Root Search")
@@ -59,7 +59,7 @@ struct GeneralSettingsView: View {
                 }
                 Picker(selection: $settings.escapeKeyBehavior) {
                     ForEach(EscapeKeyBehavior.allCases) { behavior in
-                        Text(behavior.title).tag(behavior)
+                        Text(localizing: behavior.title).tag(behavior)
                     }
                 } label: {
                     SettingsRowTitle(.generalGeneral, "Escape Key Behavior")
@@ -70,7 +70,7 @@ struct GeneralSettingsView: View {
                     Picker(selection: $settings.autoSwitchInputSourceID) {
                         Text("None").tag(nil as String?)
                         ForEach(inputSources) { source in
-                            Text(source.title).tag(Optional(source.id))
+                            Text(localizing: source.title).tag(Optional(source.id))
                         }
                     } label: {
                         SettingsRowTitle(.generalGeneral, "Auto-switch input source")
@@ -84,7 +84,7 @@ struct GeneralSettingsView: View {
             Section {
                 Picker(selection: $settings.appearance) {
                     ForEach(AppAppearance.allCases) { appearance in
-                        Text(appearance.title).tag(appearance)
+                        Text(localizing: appearance.title).tag(appearance)
                     }
                 } label: {
                     SettingsRowTitle(.generalAppearance, "Theme")
@@ -110,7 +110,7 @@ struct GeneralSettingsView: View {
             Section {
                 Picker(selection: hyperKeySelection) {
                     ForEach(HyperKeyPhysicalKey.allCases) { key in
-                        Text(key.title).tag(key)
+                        Text(localizing: key.title).tag(key)
                     }
                 } label: {
                     SettingsRowTitle(.generalHyperKey, "Hyper Key")
@@ -172,7 +172,7 @@ struct GeneralSettingsView: View {
                 }
                 Picker(selection: $settings.rootSearchSensitivity) {
                     ForEach(SearchSensitivity.allCases) { sensitivity in
-                        Text(sensitivity.title).tag(sensitivity)
+                        Text(localizing: sensitivity.title).tag(sensitivity)
                     }
                 } label: {
                     SettingsRowTitle(.generalSearch, "Search sensitivity")

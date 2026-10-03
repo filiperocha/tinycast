@@ -40,7 +40,7 @@ struct SettingsFeatureToggleLabel: View {
             VStack(alignment: .leading, spacing: Theme.Spacing.xxs) {
                 SettingsRowTitle(anchor, title)
                     .fontWeight(.semibold)
-                Text(subtitle)
+                Text(localizing: subtitle)
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
             }
@@ -68,12 +68,12 @@ struct SettingsRow<Icon: View, Trailing: View>: View {
                     if let anchor {
                         SettingsRowTitle(anchor, title)
                     } else {
-                        Text(title)
+                        Text(localizing: title)
                     }
                 }
                 .lineLimit(1)
                 if let subtitle {
-                    Text(subtitle)
+                    Text(localizing: subtitle)
                         .font(.caption)
                         .foregroundStyle(.secondary)
                         .lineLimit(subtitleLineLimit)
@@ -202,10 +202,10 @@ struct SettingsEditorHeader: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: Theme.Spacing.sm) {
-            Text(title)
+            Text(localizing: title)
                 .font(Theme.Typography.panelTitle)
             if let subtitle {
-                Text(subtitle)
+                Text(localizing: subtitle)
                     .font(Theme.Typography.rowTitle)
                     .foregroundStyle(Theme.Colors.textSecondary)
                     .fixedSize(horizontal: false, vertical: true)
@@ -235,7 +235,7 @@ struct SettingsEditorField<Content: View>: View {
                 .multilineTextAlignment(.leading)
                 .frame(maxWidth: .infinity, alignment: .trailing)
         } label: {
-            Text(title).font(labelFont)
+            Text(localizing: title).font(labelFont)
         }
     }
 }
@@ -336,7 +336,7 @@ struct SettingsFilterField: View {
             Image(systemName: "magnifyingglass")
                 .foregroundStyle(.secondary)
             // `prompt:` + `labelsHidden`, or the form makes the placeholder a left-column heading.
-            TextField("", text: $query, prompt: Text(prompt))
+            TextField("", text: $query, prompt: Text(localizing: prompt))
                 .textFieldStyle(.plain)
                 .labelsHidden()
                 .focused($focused)

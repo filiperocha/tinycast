@@ -135,7 +135,7 @@ private struct ExtensionToolchainFields: View {
                     Spacer()
                     Picker("", selection: $settings.extensionPackageManager) {
                         ForEach(ExtensionPackageManager.allCases) { manager in
-                            Text(manager.title).tag(manager)
+                            Text(localizing: manager.title).tag(manager)
                         }
                     }
                     .labelsHidden()

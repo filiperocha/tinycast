@@ -64,7 +64,7 @@ struct WindowManagementSettingsView: View {
         return Section {
             Picker(selection: $settings.windowCycle) {
                 ForEach(WindowCycle.allCases) { cycle in
-                    Text(cycle.title).tag(cycle)
+                    Text(localizing: cycle.title).tag(cycle)
                 }
             } label: {
                 SettingsRowTitle(.windowManagementOptions, "Cycling")
@@ -92,7 +92,7 @@ struct WindowManagementSettingsView: View {
                     Picker("Shortcut preset", selection: $chosenPreset) {
                         Text("Choose…").tag(WindowShortcutPreset?.none)
                         ForEach(WindowShortcutPreset.allCases) { preset in
-                            Text(preset.title).tag(Optional(preset))
+                            Text(localizing: preset.title).tag(Optional(preset))
                         }
                     }
                     .labelsHidden()

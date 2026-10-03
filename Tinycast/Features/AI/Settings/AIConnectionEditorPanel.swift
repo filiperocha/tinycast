@@ -53,7 +53,7 @@ struct AIConnectionEditorPanel: View {
                     editorField("Provider") {
                         Picker("Provider", selection: $connection.provider) {
                             ForEach(AIProviderKind.allCases) { provider in
-                                Text(provider.title).tag(provider)
+                                Text(localizing: provider.title).tag(provider)
                             }
                         }
                         .labelsHidden()
