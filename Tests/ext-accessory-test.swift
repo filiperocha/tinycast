@@ -39,6 +39,7 @@ struct ExtensionSearchAccessoryTests {
         parsing()
         seeding()
         storageIsolation()
+        tooltips()
         print(failures == 0 ? "\nALL PASSED" : "\n\(failures) FAILED")
         print("\(passes) passed, \(failures) failed")
         exit(failures == 0 ? 0 : 1)
@@ -200,6 +201,28 @@ struct ExtensionSearchAccessoryTests {
         check(
             "a store with no accessory section keeps its preferences",
             older.preference(extension: "older", key: "token") == .string("secret"))
+    }
+
+    /// A list item's `{value, tooltip}` icon, title and subtitle each keep their tooltip.
+    static func tooltips() {
+        let item = node(
+            """
+            {"id":2,"type":"List.Item","props":{
+                "icon":{"value":{"source":"check-circle-16"},"tooltip":"Selected"},
+                "title":{"value":"mise","tooltip":"Step id: mise"},
+                "subtitle":{"value":"Oh My Pi","tooltip":"topgrade --only custom_commands"}},
+                "children":[]}
+            """)
+        check("an icon's tooltip is read", item.tooltip("icon") == "Selected")
+        check("a title's tooltip is read", item.tooltip("title") == "Step id: mise")
+        check("a subtitle's tooltip is read", item.tooltip("subtitle") == "topgrade --only custom_commands")
+        check("the subtitle text still reads", item.string("subtitle") == "Oh My Pi")
+        let plain = node(
+            """
+            {"id":2,"type":"List.Item","props":{"icon":"check-circle-16","title":"mise"},"children":[]}
+            """)
+        check("a plain icon has no tooltip", plain.tooltip("icon") == nil)
+        check("a plain title has no tooltip", plain.tooltip("title") == nil)
     }
 
     static func check(_ label: String, _ condition: Bool, _ detail: String = "") {

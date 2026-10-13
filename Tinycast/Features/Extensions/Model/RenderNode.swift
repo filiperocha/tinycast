@@ -176,6 +176,8 @@ struct RenderNode: Sendable, Hashable, Identifiable {
     func string(_ key: String) -> String? {
         props[key]?.stringValue ?? props[key]?.objectValue?["value"]?.stringValue
     }
+    /// The tooltip of a Raycast `{value, tooltip}` prop, such as a list item's icon, title or subtitle.
+    func tooltip(_ key: String) -> String? { props[key]?.objectValue?["tooltip"]?.stringValue }
     func bool(_ key: String) -> Bool? { props[key]?.boolValue }
     func double(_ key: String) -> Double? { props[key]?.doubleValue }
     func date(_ key: String) -> Date? { props[key]?.dateValue }

@@ -187,18 +187,22 @@ private struct ExtensionItemRow: View {
             if let icon = node.props["icon"], icon != .null {
                 ExtensionIconView(
                     resolved: ExtensionImage.resolve(icon, assetsPath: assetsPath, isDark: isDark),
-                    size: metrics.size.resultRowIcon)
+                    size: metrics.size.resultRowIcon
+                )
+                .help(node.tooltip("icon") ?? "")
             }
             Text(node.string("title") ?? "")
                 .font(metrics.typography.rowTitle)
                 .lineLimit(1)
                 // Outranks the Spacer, which would otherwise take half the title's room.
                 .layoutPriority(1)
+                .help(node.tooltip("title") ?? "")
             if !compact, let subtitle = node.string("subtitle"), !subtitle.isEmpty {
                 Text(subtitle)
                     .font(metrics.typography.rowTrailing)
                     .foregroundStyle(.secondary)
                     .lineLimit(1)
+                    .help(node.tooltip("subtitle") ?? "")
             }
             Spacer(minLength: metrics.spacing.sm)
             // Raycast draws the accessories it is given, and a quota row's signal is all in them.
