@@ -80,6 +80,8 @@ final class ExtensionManager: ExtensionRuntimeDelegate, ExtensionHostContext {
 
     /// Idempotent both ways, so launch and the switch are the same call.
     func setEnabled(_ enabled: Bool) async {
+        // Before the guard: launch with the feature off must still hide it.
+        appIndex?.setCommandsVisible([.updateExtensions], enabled)
         guard enabled != isEnabled else { return }
         isEnabled = enabled
         guard enabled else {
@@ -299,6 +301,18 @@ final class ExtensionManager: ExtensionRuntimeDelegate, ExtensionHostContext {
         guard !Task.isCancelled else { return }
         updates = Dictionary(
             storeVersions.reconcile(with: latest).map { ($0.name, $0) }, uniquingKeysWith: { $1 })
+    }
+
+    /// Settings' check then Update All, for the launcher and links; nil while another update runs.
+    func updateAll() async -> (updated: [String], failed: [String])? {
+        guard isEnabled, updating.isEmpty else { return nil }
+        await checkForUpdates()
+        // Settings' Update All may have started during the check.
+        guard updating.isEmpty else { return nil }
+        let names = updates.keys.sorted()
+        let titles = names.compactMap { updates[$0]?.title }
+        let failed = await update(names)
+        return (titles.filter { !failed.contains($0) }, failed)
     }
 
     /// One at a time, like an import; returns the titles that failed so the pane can name them.
