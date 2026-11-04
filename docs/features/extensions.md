@@ -569,7 +569,13 @@ toolchain layout.
 ## Updates
 
 Only store extensions update; a GitHub or folder install is the user's own copy, and reinstalling it
-is how it changes. **The check runs when Settings › Extensions opens, and at no other time.**
+is how it changes. **The check runs when Settings › Extensions opens, or when Update Extensions
+runs, and at no other time.**
+
+Update Extensions (`command:update-extensions`) is the launcher row for the pane's check and Update
+All. Its link, `tinycast://command/update-extensions`, lets a script or a scheduled job update without
+a click. It asks first, because it installs code. It reports in the HUD, and does nothing while
+another update runs. The command exists only while extensions are on.
 
 `ExtensionVersionStore` records the store's `commit_sha` for each store-sourced extension in
 `extension-versions.json`, because nothing installed carries a version: neither the store's zip nor

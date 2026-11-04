@@ -180,6 +180,10 @@ struct DeepLinkTests {
         expect(
             parse("tinycast://command/clipboard-history") == .entry(.command(.clipboardHistory), .none),
             "a link without parameters carries no input")
+        expect(
+            parse("tinycast://command/update-extensions")
+                == .entry(.command(.updateExtensions), .none),
+            "a link runs the extension update as the launcher row does")
     }
 
     static func inputChecks() {
@@ -379,5 +383,8 @@ struct DeepLinkTests {
         expect(
             DeepLinkConsentPolicy.requiresConsent(.customCommand(id: UUID())),
             "running a script asks first")
+        expect(
+            DeepLinkConsentPolicy.requiresConsent(.command(.updateExtensions)),
+            "installing extension code asks first")
     }
 }

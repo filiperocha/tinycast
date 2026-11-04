@@ -257,6 +257,9 @@ final class LauncherCoordinator {
         case .importFromRaycast:
             dismissPalette()
             settingsCoordinator.showBackupSettings()
+        case .updateExtensions:
+            dismissPalette()
+            Task { await updateExtensions() }
         case .checkForUpdates:
             dismissPalette()
             core.updateCoordinator.checkForUpdates()
@@ -271,6 +274,19 @@ final class LauncherCoordinator {
             core.supportCoordinator.showSupport()
         case .quit:
             NSApp.terminate(nil)
+        }
+    }
+
+    /// No window to report in, so the HUD says what changed; a run already going is left to finish.
+    private func updateExtensions() async {
+        guard let result = await core.extensions.updateAll() else { return }
+        if !result.failed.isEmpty {
+            let names = result.failed.joined(separator: ", ")
+            core.showMessage(String(localized: "Couldn't update \(names)."), tone: .danger)
+        } else if result.updated.isEmpty {
+            core.showMessage(String(localized: "Extensions are up to date"))
+        } else {
+            core.showMessage(String(localized: "Extensions updated"))
         }
     }
 
